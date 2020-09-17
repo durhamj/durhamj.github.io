@@ -40,10 +40,6 @@ img {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
 nav a {
     font-family:'Kufam', cursive;
 }
@@ -68,6 +64,7 @@ h2 {
     color:#333;
     display:block;
     font-size:2.125rem;
+    font-family:'Kufam', cursive;
     padding:0 2%;
     margin:0;
 }
@@ -79,6 +76,7 @@ h2 {
     font-size:1rem;
     font-weight:normal;
     font-style:italic;
+    font-family:'Kufam', cursive;
 }
 
 .main-nav {
