@@ -59,8 +59,8 @@ body {
     100% 100%,
     0 calc(100% - 6vw)
   );
-    top:var(--top-position);
-    padding:4rem 0;
+    top:calc(var(--top-position) - 18%);
+    padding:14rem 0;
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ body {
 
 .main-heading h1 a {
     font-family:var(--secondary-font);
-    font-size:calc(1rem + 9vw);
+    font-size:6rem;
     color:rgba(200, 200, 200, .5);
     text-decoration: none;
 }
