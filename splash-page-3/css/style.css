@@ -152,7 +152,7 @@ body {
     
     .main-heading h1 a {
         font-size:12rem;
-        color:rgba(10, 10, 10, .7);
+        color:rgb(40, 40, 40);
     }
     
     .main-heading h1 a:hover {
