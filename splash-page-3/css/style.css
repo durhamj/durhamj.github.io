@@ -60,7 +60,7 @@ body {
     0 calc(100% - 6vw)
   );
     top:calc(var(--top-position) - 18%);
-    padding:14rem 0;
+    padding:12rem 0;
     text-align: center;
 }
 
