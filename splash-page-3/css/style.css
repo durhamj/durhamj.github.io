@@ -1,15 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:'Bebas Neue';
+    src: url(../fonts/bebas-neue-regular.ttf);
+    font-weight:400;
+    font-style:normal;
+}
 
-html {
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/raleway-variable-font-weight.ttf);
+    font-weight:100 900;
+    font-style:normal;
+}
+:root {
+    --main-font:Raleway, sans-serif;
+    --secondary-font:'Bebas Neue', serif;
+    --main-color:#333;
+    --main-background-color:rgb(200, 200, 200);
+    --top-position:35%;
     font-size:16px;
-    font-family: sans-serif;
+    
 }
 
 body {
+        font-family:var(--main-font);
+        font-weight:400;
         margin:0;
         padding:0;
         box-sizing: border-box;
-        color:rgb(200, 200, 200);
+        color:var(--main-color);
+        background-color:var(--main-background-color);
 }
 
 .social-media-links {
@@ -40,10 +59,9 @@ body {
     100% 100%,
     0 calc(100% - 6vw)
   );
-    top:35%;
+    top:var(--top-position);
     padding:4rem 0;
     text-align: center;
-    
 }
 
 .main-heading h1 {
@@ -51,8 +69,8 @@ body {
 }
 
 .main-heading h1 a {
-    font-family:'Bebas Neue';
-    font-size:6rem;
+    font-family:var(--secondary-font);
+    font-size:calc(1rem + 9vw);
     color:rgba(200, 200, 200, .5);
     text-decoration: none;
 }
@@ -67,15 +85,14 @@ body {
 }
 
 .main-heading p {
-    font-size:2rem;
-    color:#111;
+    font-size:calc(1rem + 2vw);
+    color:var(--main-color);
     margin-top:0;
 }
 
 @media (min-width:600px) {
-    
     .social-media-links img {
-    max-width:40px;
+        max-width:40px;
     }
     
     .main-heading {
@@ -84,34 +101,23 @@ body {
         100% 0,
         100% 100%,
         0 calc(100% - 8vw)
-      );
+        );
         padding:6rem 0;
-    }
-    
-    .main-heading h1 a {
-        font-size:8rem
+        top:calc(var(--top-position) - 1vh);
     }
 }
 
 @media (min-width:800px) {
-    
     .main-heading {
         clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 calc(100% - 10vw)
-      );
+        );
         padding:8rem 0;
+        top:calc(var(--top-position) - 2vh);
     }
-    .main-heading h1 a {
-        font-size:10rem
-    }
-}
-
-@media (min-width:900px) {
-    
-  
 }
 
 @media (min-width:1000px) {
@@ -123,13 +129,8 @@ body {
         0 calc(100% - 12vw)
       );
         padding:10rem 0;
+        top:calc(var(--top-position) - 4vh);
     }
-  
-}
-
-@media (min-width:1100px) {
-    
-    
 }
 
 @media (min-width:1200px) {
@@ -142,19 +143,15 @@ body {
     }
     
     .main-heading {
-        background-image: none;
+        background:none;
+        clip-path:none;
     }
     
     .main-heading h1 a {
         color:rgba(100, 100, 100, .5);
-        font-size:12rem;
-    }
-    
-    .letter-box {
     }
     
     .main-heading p {
-        font-size:3rem;
         color:#222;
     }
 }
