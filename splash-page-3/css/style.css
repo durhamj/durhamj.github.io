@@ -33,9 +33,7 @@ body {
     width:100%;
     background: url(https://picsum.photos/id/1014/6016/4000.jpg) no-repeat;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     clip-path: polygon(
     0 0,
     100% 0,
@@ -55,7 +53,7 @@ body {
 .main-heading h1 a {
     font-family:'Bebas Neue';
     font-size:6rem;
-    color:rgba(200, 200, 200, 1);
+    color:rgba(200, 200, 200, .5);
     text-decoration: none;
 }
 
@@ -87,7 +85,7 @@ body {
         100% 100%,
         0 calc(100% - 8vw)
       );
-        padding:5rem 0;
+        padding:6rem 0;
     }
     
     .main-heading h1 a {
@@ -104,7 +102,7 @@ body {
         100% 100%,
         0 calc(100% - 10vw)
       );
-        padding:10rem 0;
+        padding:8rem 0;
     }
     .main-heading h1 a {
         font-size:10rem
@@ -124,6 +122,7 @@ body {
         100% 100%,
         0 calc(100% - 12vw)
       );
+        padding:10rem 0;
     }
   
 }
@@ -138,14 +137,8 @@ body {
     body {
         background-image: url(https://picsum.photos/id/1014/6016/4000.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: center;
-        background-attachment: fixed;
         
-    }
-    
-    .social-media-links img {
-    max-width:60px;
     }
     
     .main-heading {
@@ -153,7 +146,7 @@ body {
     }
     
     .main-heading h1 a {
-        
+        color:rgba(100, 100, 100, .5);
         font-size:12rem;
     }
     
