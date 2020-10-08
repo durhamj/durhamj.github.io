@@ -59,7 +59,7 @@ body {
     100% 100%,
     0 calc(100% - 6vw)
   );
-    top:calc(var(--top-position) - 18%);
+    top:calc(var(--top-position) - 20%);
     padding:12rem 0;
     text-align: center;
 }
