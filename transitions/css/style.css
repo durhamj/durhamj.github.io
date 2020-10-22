@@ -1,0 +1,258 @@
+@font-face {
+    font-family:'Bebas Neue';
+    src: url(../fonts/bebas-neue-regular.ttf);
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/raleway-variable-font-weight.ttf);
+    font-weight:100 900;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Rouge Script';
+    src: url(../fonts/rougescript-regular.ttf);
+    font-weight:100 900;
+    font-style:normal;
+}
+:root {
+    --main-font:Raleway, sans-serif;
+    --font-for-style:'Rouge Script';
+    --secondary-font:'Bebas Neue', serif;
+    --main-color:#333;
+    --main-link-color:#754043;
+    --main-background-color:#EEE;
+    --top-position:35%;
+    font-size:16px;
+    
+}
+
+body {
+        font-family:var(--main-font);
+        font-weight:400;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        color:var(--main-color);
+        background-color:var(--main-background-color);
+}
+
+a {
+    text-decoration:none;
+    color:var(--main-link-color);
+}
+
+.page-header {
+        padding:1%;
+        display:grid;
+        grid-template-areas:'social-media cart-account'
+                            'logo logo'
+                            'page-sub-header page-sub-header';
+    }
+
+.social-media {
+    display:flex;
+    align-items: center;
+}
+
+.social-media a {
+        display:inline-block;
+        padding:2%;
+        grid-area:social-media;
+    }
+
+.cart-and-account {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:2%;
+    grid-area:cart-account;
+}
+
+.logo {
+    margin:4% auto;
+    width:100%;
+    grid-area:logo;
+}
+
+.logo > img {
+    width:100%;
+}
+
+.page-sub-header {
+    text-align:center;
+    color:#222;
+    font-size:2.5rem;
+    margin-top:-1.5rem;
+    font-family:var(--font-for-style);
+    grid-area:page-sub-header;
+}
+
+.gallery {
+    margin:0;
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:.5rem;
+}
+
+.gallery-item {
+    margin:auto;
+    position: relative;
+    width:100%;
+    background-color:transparent;
+}
+
+.gallery-item > figure {
+    margin:0;
+    width:100%;
+            }
+
+.gallery-item > figure > img {
+    width:100%;
+    clip-path: inset(15% 0 35% 0);
+}
+
+.gallery-item-1 {
+    margin-top:-5rem;
+}
+
+.gallery-item-2,
+.gallery-item-3,
+.gallery-item-4{
+    margin-top:-78%;
+}
+
+
+/* Fade to Back */
+         
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    opacity:0;
+    transition: .75s ease;
+
+}
+
+.gallery-item:hover .overlay {
+  opacity:.8;
+}
+
+.text {
+    display:flex;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    overflow:auto;
+    top:30%;
+
+}
+
+.text a {
+    font-size:2.5rem;
+    font-family: var(--font-for-style);
+    background-color:var(--main-background-color);
+    width:100%;
+    padding:5% 0;
+    text-align: center;
+    
+}
+
+.page-footer {
+    position:relative;
+    bottom:0;
+    text-align:center;
+    width:100%;
+    margin:-12rem 0 0 0;
+}
+
+.social-media,
+.cart-and-account a {
+    padding:0 1%;    
+}
+
+.social-media img,
+.cart-and-account img {
+    width:100%;
+    max-width:40px;
+}
+    
+.footer-nav a {
+    display:block;
+    padding:0 2%;
+    font-size:2.5rem;
+    font-family: var(--font-for-style);
+} 
+
+.copyright {
+    margin-top:5rem;
+    margin-bottom:0;
+}
+
+
+.address {
+    margin-top:0;
+}
+
+@media (min-width:600px) {
+    .logo {
+        margin:0 auto;
+        width:90%;
+    }
+    
+    .page-sub-header {
+        font-size:3rem;
+    }
+}
+
+@media (min-width:800px) {
+    
+    .logo {
+        margin:0 auto;
+        width:80%;
+    }
+    
+    .page-sub-header {
+        font-size:4rem;
+    }
+    
+    .footer-nav a {
+        display:inline-block;
+    }
+}
+
+@media (min-width:1000px) {
+    body {
+        margin:0 auto;
+        width:100%;
+        max-width:1200px;
+    }
+    .gallery {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0;
+    }
+    
+    .gallery-item-1,
+    .gallery-item-2 {
+    margin-top:-5rem;
+    }
+
+    .gallery-item-3,
+    .gallery-item-4{
+        margin-top:-78%;
+    }
+    
+}
+
+@media (min-width:1200px) {
+   
+}
+
