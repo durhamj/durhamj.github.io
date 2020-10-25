@@ -83,7 +83,7 @@ a {
     grid-area:logo;
 }
 
-.logo > img {
+.logo > a > img {
     width:100%;
 }
 
