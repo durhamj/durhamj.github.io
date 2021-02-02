@@ -101,7 +101,7 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .swiper-container {
-  width:400px;
+  width:360px;
   height:auto;
   min-height:550px;
   margin:2rem 0;
@@ -109,7 +109,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .swiper-slide {
     margin:4rem 0;
-    width:400px;
+    width:360px;
     height:auto;
     border-radius:1rem;
     display: -webkit-box;
