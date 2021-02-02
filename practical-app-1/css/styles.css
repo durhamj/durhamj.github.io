@@ -17,7 +17,7 @@ body {
 
 main {
     width:100vw;
-    max-width:420px;
+    max-width:411px;
     height:100vh;
     margin:0 auto;
     position:relative;
@@ -83,7 +83,7 @@ background:#FFF;
 
 .search-btn {
     position: absolute;
-    right:5.5rem;
+    right:5rem;
     margin:0;
     padding:0;
     height:2.25rem;
@@ -100,7 +100,7 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .swiper-container {
-  width:420px;
+  width:411px;
   height:auto;
   min-height:550px;
   margin:2rem 0;
@@ -108,7 +108,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .swiper-slide {
     margin:4rem 0;
-    width:420px;
+    width:411px;
     height:auto;
     border-radius:1rem;
     display: -webkit-box;
