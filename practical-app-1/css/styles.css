@@ -17,7 +17,7 @@ body {
 
 main {
     width:100vw;
-    max-width:411px;
+    max-width:412px;
     height:100vh;
     margin:0 auto;
     position:relative;
@@ -100,7 +100,7 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .swiper-container {
-  width:411px;
+  width:412px;
   height:auto;
   min-height:550px;
   margin:2rem 0;
@@ -108,7 +108,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .swiper-slide {
     margin:4rem 0;
-    width:411px;
+    width:412px;
     height:auto;
     border-radius:1rem;
     display: -webkit-box;
