@@ -159,7 +159,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     overflow:hidden;
 }
 
-
 .product-card{
     display:flex;
     display: none;
