@@ -1,16 +1,4 @@
-Column Headers
 
-        Name
-        Mass (10<sup>24</sup>kg)
-        Diameter (km)
-        Density (kg/m<sup>3</sup>)
-        Gravity (m/s<sup>2</sup>)
-        Length of day (hours)
-        Distance from Sun (10<sup>6</sup>km)
-        Mean temperature (°C)
-        Number of moons
-        Notes
-        Image
         
 -----------------------        
         
