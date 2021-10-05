@@ -35,19 +35,26 @@ h1 {
 .portfolio-grid {
 
 display:grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap:1%;
 
 }
 
 .portfolio-grid a {
  width:100%;
- padding:1rem 0;
+ padding:.5rem 0;
+ font-size:.85rem;
 }
 
  @media only screen and (min-width:600px) {
   body { 
    width:70%;
   }
+
+  .portfolio-grid {
+   grid-template-columns: repeat(3, 1fr);
+  }
+
  }
 
  @media only screen and (min-width:800px) {
