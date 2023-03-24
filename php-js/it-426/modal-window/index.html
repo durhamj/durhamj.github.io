@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example Form</title>
+        <link href="css/formstyles.css" rel="stylesheet">
+    </head>
+    <body>
+<!-- Page Header -->
+        <header> 
+            <h1>Hi, I'm John.</h1>
+            <p>a vinegar-drinking 8-bit vegan unicorn</p> 
+        </header>
+        <main>
+<!-- Introduction -->
+            <section>
+                <h2>sriracha vexillologist</h2>
+                <p>Meh cred pug kitsch direct trade 90's sriracha keffiyeh 8-bit yr iPhone meditation taiyaki PBR&amp;B kogi. Tattooed keffiyeh schlitz, distillery chia bitters quinoa +1 raw denim green juice tilde unicorn drinking vinegar keytar. Thundercats tumeric iPhone, letterpress raw denim fashion axe mixtape cray viral normcore celiac dreamcatcher squid. IPhone next level sriracha man braid taiyaki vegan. Post-ironic brooklyn next level actually coloring book wolf vape lo-fi fanny pack. 8-bit semiotics chicharrones readymade pabst sriracha kale chips.</p>
+<!-- Buttons to Trigger Modal Windows -->
+                <button class="reg" id="open-modal">register</button>
+                <button class="leave" id="open-modal-2">leave</button>
+            </section>
+<!-- First Modal Window -->
+            <aside class="modal-wrapper" id="modal-window">
+                <section class="modal-container">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Account Registration</h2>
+                        <button class="close-modal">&times;</button>
+                    </header>
+                    <form class="modal-content" id="signup" class="form" action="php/test.php" method="POST">
+                        <div class="form-field">
+                            <label for="username">username</label>
+                            <input type="text" name="username" id="username">
+                            <p></p>
+                        </div>
+                            <div class="form-field">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email">
+                            <p></p>
+                        </div>
+                            <div class="form-field">
+                            <label for="password">password</label>
+                            <input type="password" name="password" id="password">
+                            <p></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="password">confirm password</label>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                            <p></p>
+                        </div>
+                        <button type="submit" id="signup">signup</button>
+                        <button type="reset" id="reset">reset</button>
+                    </form>
+                </section>
+            </aside>
+<!-- Second Modal Window -->
+            <aside class="modal-wrapper" id="modal-window-2">
+                <section class="modal-container">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Are you sure?</h2>
+                        <button class="close-modal-2">&times;</button>
+                    </header>
+                    <p class="modal-content">
+                        Portland vaporware artisan paleo, hammock vape raclette palo santo irony mixtape helvetica.<br><br>
+                        <a href="https://hipsum.co">Yes, give me something else to chew on.</a>
+                    </p>
+                </section>
+            </aside>
+        </main>
+<!-- Footer -->
+        <footer>
+            <p><span>Questions? Contact: </span><a href="mailto:admin@fval.org">admin@fval.org</a></p>
+        </footer>
+<!-- Link the JavaScript -->
+        <script src="js/validation.js"></script> <!-- Form Validation -->
+        <script src="js/modal.js"></script>      <!-- Open/Close Modal Window -->
+    </body>
+</html>
