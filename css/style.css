@@ -62,6 +62,12 @@ grid-column-gap:1%;
  width:100%;
  padding:.5rem 0;
  font-size:.85rem;
+ color: var(--clr-dark);
+}
+
+.portfolio-grid a:hover {
+    color: var(--clr-primary);
+  transition: all 0.3s ease;
 }
 
  @media only screen and (min-width:600px) {
