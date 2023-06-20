@@ -1,35 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin:0;
+  padding:0;
+}
+
+:root {
+  font-size:16px;
+  --clr-primary: #DB5461;
+  --clr-dark: #333;
+  --clr-neutral: #686963;
+  --clr-light: #EEE;
+  --def-font: 'Poppins', sans-serif;
+  --alt-font: 'Karantina', cursive;
+}
+
 html {
- font-size:16px;
+ font-family:var(--def-font);
 }
 
-body { 
- background-color: #FFF;
- font-family: Arial, Verdana, sans-serif;
- margin:20% auto;
- width:90%;
- font-family: 'Poppins', sans-serif;
+body {
+  margin:0 auto;
+  width:95%;
+
 }
 
-p {
- margin:2rem 0;
- font-weight:200;
-}
-
-main {
- margin:40px 0;
- max-width:600px;
-}
-
-section {
- margin:40px 0;
+h1,
+h2,
+h3 {
+  color: var(--clr-dark);
+ 
 }
 
 h1 {
- font-size:4rem;
- font-family: 'Karantina', cursive;
- letter-spacing: .125rem;
+  font-size:4rem;
+  margin-bottom:2rem;
+}
+
+h2 {
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+p {
+  padding:2rem;
 }
 
 .portfolio-grid {
