@@ -1,0 +1,18 @@
+.heading-color {
+
+                color:blue 
+                }
+
+#p1 {
+    color:red;
+    font-size:24px;
+    background-color:black;
+}
+
+footer p {
+    font-size:18px;
+}
+
+footer p span {
+    color:brown;
+}
