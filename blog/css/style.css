@@ -48,4 +48,170 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
+/* Font Import */
 
+
+@font-face {
+    
+    font-family:Ultra;
+    src: url(../fonts/serif/ultra-regular.ttf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    
+    font-family:Roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+/* General Setup */
+
+html {
+    
+    font-size:16px;
+    font-family:Roboto, sans-serif;
+    color:#333;
+}
+
+body {
+   padding:0;
+    margin:0 auto;
+    font-size:1rem;
+    max-width:104rem;
+    min-width:64rem;
+}
+
+main {
+    
+    margin:0 auto;
+    padding-bottom:.25rem;
+    width:90%;
+}
+
+ul {
+    list-style-type:none;
+}
+
+img {
+    width:100%;
+    display:block;
+    max-width:25rem;
+}
+
+a {
+    
+    text-decoration:none;
+}
+
+/* Section */
+
+.main-section {
+    display:flex;
+}
+
+article {
+    
+    width:75%;
+}
+
+.article-image {
+
+    float:left;
+    margin:0 1rem 0 0;
+}
+
+.article-image + p {
+    
+    margin-top:0;
+}
+
+/* Subsection */
+
+.subsection {
+    
+    margin-top:4rem;
+    margin-bottom:2rem;
+    padding:0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(5rem, 1fr));
+    grid-column-gap: 1%;
+}
+
+.subsection figure {
+    padding:0;
+    margin:0;
+    background-color:#EED;
+}
+
+.subsection figcaption {
+    font-size:.75rem;
+    padding:.75rem;
+}
+
+.subsection img {
+    padding-bottom:1%;
+    min-width:5rem;
+}
+
+
+/* Sidebar */
+
+aside {
+    clear:both;
+    width:19%;
+    margin-left:3%;
+    padding-left:3%;
+    border-left: .0625rem solid #333;
+}
+
+aside p {
+    font-size:.75rem;
+    padding-bottom:2rem;
+    border-bottom:.0625rem solid #333;
+}
+
+.expand {
+    font-size:.25rem;
+    display:block;
+    padding-top:.5rem;
+}
+
+button {
+    margin-top:1rem;
+    padding:1rem;
+    font-family:Ultra;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    background-color:#27476E;
+    box-shadow:.187rem .187rem .187rem #333;
+    border:none;
+    border-radius:.625rem;
+    background-color:#27476E;
+}
+
+button a {
+    color:#EED;
+}
+
+
+/* Footer */
+
+footer {
+    margin:6rem auto .5rem auto;
+    width:90%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1%;
+}
+
+footer :nth-child(2) {
+    text-align:right;
+}
+
+footer a {
+   
+    color:#6F7D77;
+}
