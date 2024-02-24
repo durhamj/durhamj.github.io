@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2013-11-17T20:23:33">
+<albums>
+<ID>1</ID>
+<AlbumTitle>Bleach</AlbumTitle>
+<ReleaseDate>June 15, 1989</ReleaseDate>
+<LiveAlbum>0</LiveAlbum>
+<StudioAlbum>1</StudioAlbum>
+<Compilation>0</Compilation>
+<BoxSet>0</BoxSet>
+<CoverArt>bleach.jpg</CoverArt>
+<TheLinks>http://en.wikipedia.org/wiki/Bleach_album</TheLinks>
+<Notes>Bleach is Nirvana’s debut studio album and was well received by critics, but failed to chart in the U.S. upon its original release.</Notes>
+</albums>
+
+<albums>
+<ID>2</ID>
+<AlbumTitle>Nevermind</AlbumTitle>
+<ReleaseDate>September 24, 1991</ReleaseDate>
+<LiveAlbum>0</LiveAlbum>
+<StudioAlbum>1</StudioAlbum>
+<Compilation>0</Compilation>
+<BoxSet>0</BoxSet>
+<CoverArt>nevermind.jpg</CoverArt>
+<TheLinks>http://en.wikipedia.org/wiki/Nevermind</TheLinks>
+<Notes>Nevermind is Nirvana’s second studio album, and became a success in late 1991, largely due to the popularity of its first single, &quot;Smells Like Teen Spirit&quot;.</Notes>
+</albums>
+
+<albums>
+<ID>3</ID>
+<AlbumTitle>Incesticide</AlbumTitle>
+<ReleaseDate>December 14, 1992</ReleaseDate>
+<LiveAlbum>0</LiveAlbum>
+<StudioAlbum>0</StudioAlbum>
+<Compilation>1</Compilation>
+<BoxSet>0</BoxSet>
+<CoverArt>incesticide.jpg</CoverArt>
+<TheLinks>http://en.wikipedia.org/wiki/Incesticide</TheLinks>
+<Notes>Incesticide is a compilation album that consists of Nirvana’s 1990 single &quot;Sliver&quot;, demos, outtakes, covers, and radio broadcast recordings.</Notes>
+</albums>
+</dataroot>

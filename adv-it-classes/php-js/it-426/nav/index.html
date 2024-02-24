@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="home">
+
+<!-- Navbar Section -->
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#home" id="navbar-logo">unicorn</a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-links" id="home-page">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-links" id="about-page">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#services" class="navbar-links" id="services-page"
+              >Services</a
+              >
+          </li>
+         <li class="navbar-item">
+            <a href="#contact" class="navbar-links" id="contact-page"
+              >contact</a
+              >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+<!-- Main Content -->
+
+    <main>
+      
+      <section class="section-1">
+      <header>
+      <h1>sriracha vexillologist</h1>
+      <h3>vinegar-drinking 8-bit vegan unicorn</h3>
+    </header>
+    </section>
+    <section class="section-2" id="about">
+      <h2>hashtag selfies</h2>
+      <p> Bitters fanny pack gochujang four dollar toast. Forage scenester ugh polaroid fingerstache chillwave. Yr adaptogen four dollar toast, skateboard hot chicken raw denim narwhal air plant gochujang food truck jianbing gastropub coloring book.</p>
+      <img class="img" src="img/img-1.jpg" />
+    </section>
+    <section class="section-3" id="services">
+      <h2>sustainable beard</h2>
+      <p>Tumeric wolf lumbersexual lo-fi church-key craft beer edison bulb YOLO organic succulents gentrify etsy neutra. Food truck locavore raclette tote bag fanny pack, hexagon freegan chia normcore. Forage hashtag selfies enamel pin lomo, shoreditch snackwave pour-over swag hell of.</p>
+      <p>Photo booth air plant hella vegan lyft yr. Hammock keffiyeh subway tile vegan disrupt af wayfarers. Microdosing stumptown la croix messenger bag hammock unicorn next level fanny pack distillery williamsburg poke coloring book. Sustainable cloud bread iPhone lo-fi vexillologist food truck humblebrag tbh, normcore lyft distillery godard letterpress pitchfork. Migas af pitchfork VHS, whatever sustainable mumblecore irony asymmetrical bespoke tbh iPhone +1. Pour-over selvage VHS, edison bulb palo santo farm-to-table pinterest neutra single-origin coffee.</p>
+    </section>
+
+    <section class="section-4" id="contact">
+      <h2>single-origin plaid</h2>
+      <form id="signup" class="form" action="php/test.php" method="POST">
+          <label for="username">username</label>
+          <input type="text" name="username" id="username">
+          <label for="email">email</label>
+          <input type="email" name="email" id="email">
+          <label for="password">password</label>
+          <input type="password" name="password" id="password">
+          <label for="password">confirm password</label>
+          <input type="password" name="confirm-password" id="confirm-password">
+          <button type="submit" id="signup">signup</button>
+          <button type="reset" id="reset">reset</button>
+      </form>
+    </section>
+   <!-- Footer Section -->
+    
+    <footer class="page-footer">
+      <div class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a href="/" id="footer-logo">unicorn</a>
+          </div>
+          <p class="website-rights">© unicorn 2020. All rights reserved</p>
+          <div class="social-icons">
+            <a href="/" class="social-icon-link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social-icon-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social-icon-link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social-icon-link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social-icon-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </main>
+
+
+    <script src="js/nav.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
