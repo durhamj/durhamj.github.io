@@ -51,9 +51,9 @@ grid-column-gap:1%;
    width:70%;
   }
 
-  .portfolio-grid {
+  /* .portfolio-grid {
    grid-template-columns: repeat(3, 1fr);
-  }
+  } */
 
  }
 
