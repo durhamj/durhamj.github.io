@@ -1,13 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $content = $_POST['content'];
-    file_put_contents('content.txt', $content);
-    header('Location: index.php');
-    exit();
-}
-
-$content = file_get_contents('content.txt');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,19 +11,13 @@ $content = file_get_contents('content.txt');
 </head>
 <body>
     <h1>Edit Content</h1>
-    <form method="POST">
-        <textarea id="summernote" name="content"><?php echo htmlspecialchars($content); ?></textarea>
+    <form id="edit-form">
+        <textarea id="summernote"></textarea>
         <br>
-        <button type="submit">Save</button>
+        <button type="button" onclick="saveContent()">Save</button>
     </form>
-    <a href="index.php">Back to Home</a>
+    <a href="index.html">Back to Home</a>
 
-    <script>
-        $(document).ready(function() {
-            $('#summernote').summernote({
-                height: 300
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

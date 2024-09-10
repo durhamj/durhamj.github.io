@@ -1,6 +1,3 @@
-<?php
-$content = file_get_contents('content.txt');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +8,9 @@ $content = file_get_contents('content.txt');
 </head>
 <body>
     <h1>MyWiki</h1>
-    <a href="edit.php">Edit Content</a>
-    <div id="content">
-        <?php echo $content; ?>
-    </div>
+    <a href="edit.html">Edit Content</a>
+    <div id="content"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
