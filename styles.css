@@ -63,6 +63,19 @@ section ul li {
     margin-bottom: 10px;
 }
 
+/* Bio Images Styling */
+.bio-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.bio-images img {
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Compositional Periods */
 section.composition-periods h3 {
     font-size: 1.8rem;
@@ -82,6 +95,16 @@ footer {
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5rem;
+    }
+
+    .bio-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio-images img {
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 
     .container {
