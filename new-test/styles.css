@@ -1,68 +1,118 @@
-```
+
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Global Styles */
+html {
+    font-size: 16px;
+    color: #333;
+    font-family: Poppins, sans-serif;
+}
+
 body {
-  display: grid;
-  grid-template-rows: auto 1fr;
+    background-color: #FFF;
+    margin: 1% auto;
+    width: 90%;
+    max-width: 59rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
 }
 
-nav a {
-  text-decoration: none;
-  color: inherit;
+h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
 }
 
-section {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  place-items: center;
-  scroll-snap-align: start;
-  background-attachment: fixed;
+h1 span {
+    color: rgb(150, 40, 62);
 }
 
-.parallax {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+h2 {
+    font-size: 2rem;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
 }
 
-.portfolio ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-    gap: 20px;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+#banner {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#banner img {
+    width: 100%;
+    display: block;
+}
+
+main {
     margin: 0;
 }
 
-@media (min-width: 768px) {
-    .portfolio ul {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
-    }
+p {
+    font-size: .875rem;
 }
 
-@media (min-width: 1024px) {
-    .portfolio ul {
-        grid-template-columns: repeat(5, 1fr); /* 5 columns on even larger screens */
-    }
+/* Navigation Styles */
+nav {
+    margin-top: .75rem;
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-  }
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
 }
-```
+
+nav a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgb(46, 134, 171);
+    font-weight: 500;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+nav a span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* On hover */
+nav a:hover span:nth-child(odd) {
+    transform: rotate(4deg);
+    color: rgb(47, 79, 79);
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+
+nav a:hover span:nth-child(even) {
+    transform: rotate(-4deg);
+    color: rgb(47, 79, 79);
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+
+/* On active class (when the link is clicked) */
+nav a.active span:nth-child(odd) {
+    transform: rotate(4deg);
+    color: rgb(47, 79, 79);
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+
+nav a.active span:nth-child(even) {
+    transform: rotate(-4deg);
+    color: #2f4f4f;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
 
